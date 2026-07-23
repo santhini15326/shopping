@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping System</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            background:#f5f5f5;
+            margin:0;
+            padding:0;
+        }
+
+        h1{
+            color:white;
+            text-align:center;
+            padding:15px;
+            background:#0066cc;
+        }
+
+        h2{
+            text-align:center;
+            color:#0066cc;
+        }
+
+        .product-section{
+            width:95%;
+            margin:auto;
+            padding:20px;
+        }
+
+        table{
+            width:100%;
+            text-align:center;
+        }
+
+        td{
+            padding:15px;
+        }
+
+        img{
+            border:1px solid gray;
+            border-radius:8px;
+        }
+
+        #dropbox{
+            width:500px;
+            height:450px;
+            border:2px solid black;
+            margin:auto;
+            padding:10px;
+            background:white;
+        }
+
+        form{
+            width:400px;
+            margin:auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Inline CSS -->
+<h1 style="background-color:#0066cc;">
+ONLINE SHOPPING SYSTEM
+</h1>
+
+<hr>
+
+<h2>List of Products</h2>
+
+<center>
+
+<img src="mapp1.jpeg"
+usemap="#shopmap"
+width="700"
+height="300">
+
+</center>
+
+<map name="shopmap">
+
+<area shape="rect"
+coords="0,0,160,250"
+href="#laptop">
+
+<area shape="rect"
+coords="160,0,330,250"
+href="#phone">
+
+<area shape="rect"
+coords="330,0,500,250"
+href="#coffee">
+
+</map>
+
+<hr>
+
+<div class="product-section" id="laptop">
+
+<h2>Laptop Section</h2>
+
+<table>
+
+<tr>
+
+<td>
+
+<img id="clock1"
+src="lap1.jpeg"
+width="200"
+height="200"
+draggable="true"
+ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+
+<source src="vi1.mp4" type="video/mp4">
+
+</video>
+
+</td>
+
+<td>
+
+<img id="clock2"
+src="lap2.jpeg"
+width="200"
+height="200"
+draggable="true"
+ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+
+<source src="vi1.mp4" type="video/mp4">
+
+</video>
+
+</td>
+
+<td>
+
+<img id="clock3"
+src="lap3.jpeg"
+width="200"
+height="200"
+draggable="true"
+ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+
+<source src="vi1.mp4" type="video/mp4">
+
+</video>
+
+</td>
+
+<td>
+
+<img id="clock4"
+src="lap4.jpeg"
+width="200"
+height="200"
+draggable="true"
+ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+
+<source src="vi1.mp4" type="video/mp4">
+
+</video>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+<hr>
+
+<div class="product-section" id="phone">
+
+<h2>Phone Section</h2>
+<hr>
+
+<table>
+
+<tr>
+
+<td>
+
+<img id="phone1" src="phone1.jpeg" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+
+<img id="phone2" src="pho2.jfif" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+
+<img id="phone3" src="ph3.jpeg" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+
+<img id="phone4" src="ph4.jpeg" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<hr>
+
+<div class="product-section" id="coffee">
+
+<h2>Accessories Section</h2>
+
+<table>
+
+<tr>
+
+<td>
+
+<img id="acc1" src="cup1.jpeg" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+
+<img id="acc2" src="cupp1.jfif" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+
+<img id="acc3" src="cupp2.jfif" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+<td>
+
+<img id="acc4" src="cupp3.jfif" width="200" height="200"
+draggable="true" ondragstart="drag(event)">
+
+<br><br>
+
+<video width="200" height="200" controls>
+<source src="vi1.mp4" type="video/mp4">
+</video>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<hr>
+
+<h2 align="center">Shopping Cart</h2>
+
+<div id="dropbox"
+ondragover="allowDrop(event)"
+ondrop="drop(event)">
+
+<h3 align="center">Purchased List</h3>
+
+</div>
+
+<hr>
+
+<script>
+
+function allowDrop(ev)
+{
+    ev.preventDefault();
+}
+
+function drag(ev)
+{
+    ev.dataTransfer.setData("text",ev.target.id);
+}
+
+function drop(ev)
+{
+    ev.preventDefault();
+
+    var data=ev.dataTransfer.getData("text");
+
+    var node=document.getElementById(data).cloneNode(true);
+
+    node.width=80;
+    node.height=80;
+
+    ev.target.appendChild(document.createElement("br"));
+    ev.target.appendChild(node);
+}
+
+function getLocation()
+{
+    if(navigator.geolocation)
+    {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+    else
+    {
+        document.getElementById("location").innerHTML="Geolocation not supported";
+    }
+}
+
+function showPosition(position)
+{
+    document.getElementById("location").innerHTML=
+    "Latitude : "+position.coords.latitude+
+    "<br>Longitude : "+position.coords.longitude;
+}
+
+</script>
+<hr>
+
+<h2 align="center">Order Form</h2>
+
+<form>
+
+Name :
+<input type="text">
+
+<br><br>
+
+Email :
+<input type="email">
+
+<br><br>
+
+Mobile :
+<input type="number">
+
+<br><br>
+
+Product :
+
+<select>
+
+<option>Laptop</option>
+<option>Phone</option>
+<option>Accessories</option>
+
+</select>
+
+<br><br>
+
+Address
+
+<br>
+
+<textarea rows="4" cols="30"></textarea>
+
+<br><br>
+
+<input type="submit" value="Place Order">
+
+</form>
+
+<hr>
+
+<h2 align="center">Store Location</h2>
+
+<center>
+
+<button onclick="getLocation()">
+Find Geo Location
+</button>
+
+<p id="location"></p>
+
+</center>
+
+<hr>
+
+</body>
+
+</html>
